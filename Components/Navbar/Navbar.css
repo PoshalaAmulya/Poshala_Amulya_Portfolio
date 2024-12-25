@@ -1,0 +1,132 @@
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-around; 
+   margin:30px 10%;
+   width:70%
+}
+.navbar h1{
+    font-size: 40px;
+    font-weight: 600;
+    /* font-family: "Playfair Display"; */
+    /* font-style: italic; */
+    /* color: #123C69; */
+    color:#25274D;
+}
+.navbar h1 span{
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "Playfair Display";
+    /* font-style: italic; */
+    /* color: #123C69; */
+    color:#c71281;
+    
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-connect{
+    border-radius: 50px;
+    background-image: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgba(37,89,222,1) 7.5%, rgba(4,4,29,1) 44.7% );
+    color:white;
+    /* background: #123C69; */
+    /* background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.63% ); */
+    padding : 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    cursor: pointer;
+}
+.nav-menu li img{
+    display: flex;
+    margin:auto;
+}
+
+.underline{
+    text-decoration: none;
+    color:#25274D;
+    font-weight: 600;
+    position: relative;
+}
+.anchor-link{
+    text-decoration: none;
+    
+}
+.underline::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    width:0%;
+    height:3px;
+    background-color: blue;
+    transition: all 0.5s;
+
+}
+.underline:hover::before{
+    width:100%;
+}
+.nav-mobile-close{
+    display: none;
+}
+.nav-mobile-open{
+    display: none;
+}
+@media(max-width: 768px){
+    .navbar{
+        margin:20px 50px;
+    }
+    .nav-mobile-open{
+        display: block;
+        position: fixed;
+        right:30px;
+    }
+    .nav-mobile-close{
+        display: block;
+        position: relative;
+        top:30px;
+        left:290px;
+        width:30px;
+    }
+    .nav-menu {
+        position:fixed;
+        flex-direction: column;
+        align-items: start;
+        top:0;
+        gap:30px;
+        background: #a4c3f1;
+        width:350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s ease-in-out;
+        right:-350px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left :100px;
+        flex-direction: column;
+        gap:20;
+    }
+}
+@media(max-width:1025px){
+    .nav-connect{
+        display: none;
+    }
+}

@@ -1,0 +1,117 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin:80px 10%;
+}
+.mywork-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    /* font-size: 80px; */
+    font-weight: 500;
+    color:#030339;
+}
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+}
+.certificate{
+    position: relative;
+}
+.certificate img{
+    width:100%;
+    height:100%;
+    display:block;
+    /* width: 419px; 
+     height: 280px; */
+    transition: 0.2s;
+    cursor: pointer;
+    /* object-fit: cover; */
+}
+.overlay{
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background: #020e2ef7;
+    /* background:radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgba(37,89,222,1) 7.5%, rgba(4,4,29,1) 44.7% ); */
+    /* background:linear-gradient(135deg, #71aad0 0%, #f79ef4 100%); */
+/* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition:  0.5s;
+}
+
+.overlay p a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    /* background: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgba(37,89,222,1) 7.5%, rgba(4,4,29,1) 44.7% );; */
+    color:white;
+    border: 3px solid white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    
+
+}
+.overlay:hover{
+    opacity: 0.9;
+    /* transform: rotate(-20deg); */
+}
+
+/* .mywork-item:hover .overlay {
+    opacity: 1;
+}
+.mywork-showmore img{
+    width:30px;
+} */
+/* .mywork-showmore{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 3px solid #030339;
+    padding: 20px 50px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    color:#030339;
+} */
+/* .mywork-showmore:hover{
+    gap:30px;
+    /* transform: scale(1.1); */
+    /* background-color: #9bbef1;
+    transition: 0.6s; */
+/* }  */
+@media(max-width:768px){
+    .mywork{
+        gap:50px;
+        margin:50px 6%;
+        align-items: start;
+    }
+    .mywork-title h1{
+        padding: 0px;
+        font-size: 40px;
+    }
+    .mywork-title img{
+        width:100px;
+        right: -40px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .mywork-showmore{
+        padding: 15px 30px;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+       
+}

@@ -1,0 +1,214 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+    margin: 80px 10%;
+}
+.about-title h1 span{
+    color:#c71281;
+    
+}
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight:500;
+    color:#030339;
+    
+}
+.about-section{
+    display: flex;
+    width: 100%;
+    gap:70px;
+}
+.about-left img{
+    border-radius: 20px;
+    width:100%;
+    /* height:300;
+    width:400; */
+    border: 5px solid #7b9dfa;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+    /* width:100% */
+} 
+.about-right h1{
+    background: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgb(10, 40, 117) 7.5%, rgba(4,4,29,1) 44.7% );
+   /* 0 background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.edu{
+    display: flex;
+    gap:50px;
+    width:100%;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: space-around;
+    font-size: 20px;
+    color:#030339;
+    font-weight: 500;
+    /* border:2px solid white */
+    /* align-items: space-between; */  
+}
+.label{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap:20px;
+    font-size: 20px;
+}
+
+.edu-details{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap:20px;
+    font-size: 20px;
+    /* margin-bottom: 70px; */
+}
+.edu p:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about-skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+.about-skill img{
+    width: 50px;
+   
+}
+#java{
+    width:70px;
+}
+#node
+{
+    width:100px;
+
+}
+
+.profile{
+    display: flex;
+    gap:10px;
+}
+.profile img{
+    width:40px;
+}
+.about-achievements{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    margin-bottom:50px;
+    color:#030339;
+    gap:20px;
+}
+.about-achievements hr{
+    border: 3px solid #030339;
+    color:#030339;
+}
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap:8px;
+    transition: 0.5s;
+    color:#030339;
+    font-weight: 500;
+}
+.about-achievement h1{
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(270deg,#030339 50.41%, #e52fcd 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achievement p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-skill img:hover{
+    transform:scale(1.05);
+    transition: 0.3s;
+}
+
+/* .about-achievement:hover{
+    transform: scale(1.12);
+    transition: 0.5s;
+} */
+@media (min-width:769px) and (max-width:1024px){
+    .about-left{
+        display: none;
+    }
+    .about-achievements{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    
+}
+@media(max-width:321px){
+    .about-skill{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+@media (max-width:768px){
+    .about{
+       gap:80px;
+       margin:50px 6%;
+       align-items:start; 
+    }
+    .about-title h1{
+        font-size: 40px;
+        padding: 0px;
+
+    }
+    .about-section{
+        flex-direction:column
+    }
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        font-size:18px;
+        line-height: 32px;
+    }
+    .about-achievements{
+        justify-content: space-between;
+    }
+    .about-achievements{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .about-achievement{
+        gap: 10px;
+    }
+    .about-achievement h1{
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .about-achievement p{
+        text-align: center;
+        font-size: 16px;
+    }
+}

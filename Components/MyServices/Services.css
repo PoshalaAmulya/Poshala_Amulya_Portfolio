@@ -1,0 +1,127 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin:80px 10%;
+
+}
+/* .services-title{
+   
+
+} */
+.services-title h1{
+    padding: 0 30px;
+    color:#030339;
+    font-size: 60px;
+    font-weight: 500;
+}
+.services-title img{
+    width:160px;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    z-index:-1;
+}
+.services-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px 30px 45px 30px;
+    gap:10px;
+    border: 3px solid #030339;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+    color: #030339;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap:30px;
+    margin-bottom: 50px;
+    color:#030339;
+    /* padding-bottom: 20px; */
+    /* border:2px solid #ff00ff; */
+}
+.services-format h3{
+    /* font-size: 28px; */
+    font-size: 22px;
+    font-weight: 600; 
+}
+.services-format h2{
+    font-size: 30px;
+    /* font-size: 38px; */
+    font-weight: 800;
+    background: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgb(10, 40, 117) 7.5%, rgba(4,4,29,1) 44.7% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-format p{
+    
+    color: #030339;
+    font-size: 20px;
+    /* font-size: 24px; */
+    line-height: 30px;
+    /* line-height: 40px; */
+    max-width:400px;
+}
+/* .services-readmore{
+    display: flex;
+    gap:10px;
+    /* gap:20px; */
+    /* align-items: center;
+    margin-top: 20px; */
+/* } */ 
+/* .services-readmore img{
+    width: 30px;
+} */
+
+.services-format:hover{
+    border:3px solid #030339;
+    /* background: #7796d2; */
+    background: linear-gradient(150deg,#92b3ef 50.41%, #a0aff4 90.25%);
+    transform: scale(1.05);
+    transition: 0.5s; 
+}
+/* .service-readmore img{
+    width: 20px;
+} */
+@media(max-width: 768px){
+    .services{
+        margin: 20px 6%;
+        align-items: start;
+        gap:70px;
+    }
+    .services-title h1{
+        padding :0;
+        font-size: 40px;
+    }
+    .services-title img{
+        width: 100px;
+        right:-40px;
+    }
+    .services-format h3{
+        font-size: 22px;
+        font-weight:600;
+    }
+    .services-format h2{
+        font-size: 20px;
+    }
+    .services-format p{
+        font-size: 16px;
+        line-height: 26px;
+        max-width:300px;
+    }
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+    }
+    .services-format{
+        gap:10px;
+        padding:20px;
+    }
+}

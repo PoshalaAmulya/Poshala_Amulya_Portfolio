@@ -1,0 +1,182 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 10%;
+}
+
+.contact-title h1{
+    padding: 0px 30px;
+    font-weight: 600;
+    font-size: 60px;
+    color:#030339;
+}
+span{
+    color:#c71281;
+}
+.contact-sec{
+    /* border: 2px solid #d8d8d8; */
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 40%;
+}
+.contact-left h1{
+    font-size: 50px;
+    font-weight: 700;
+    background: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgb(10, 40, 117) 7.5%, rgba(4,4,29,1) 44.7% );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .contact-left p{
+    max-width:550px;
+    color:#030339;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    
+} */
+.contact1{
+    margin-top: 20px;
+    display: flex;
+    gap:20px;
+}
+.contact1 img{
+    width:45px;
+}
+ .contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color:#d8d8d8;
+    font-size: 18px;
+}
+.contact-detail{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    color:#030339;
+
+}
+.contact-detail img{
+    width:40px;
+}
+.contact-right{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+.contact-right label{
+    font-size: 22px;
+    color:#030339;
+    font-weight: 500;
+}
+/* #030339; */
+.contact-right input{
+    border: none;
+    width:100%;  
+    padding: 18px 0 18px 20px;
+    /* width: 700px; */
+    /* height: 78px; */
+    /* padding-left: 20px; */
+    border-radius: 5px;
+    background:#7ba5d0 ;
+    color: #030339;
+    font-family: "Merriweather";
+    font-size: 20px;
+}
+/* .contact-right input:focus{
+    border:3px solid #030339;
+} */
+.contact-right textarea{
+    border: none;
+    width: 100%;
+    padding: 18px 0 18px 20px;
+    border-radius: 5px;
+    background: #7ba5d0 ;
+    /* background:#32323c ; */
+    color:#030339;
+    font-family:"Merriweather";
+    font-size: 20px;
+   
+}   
+.contact-submit{
+    border: none;
+    color:#ffffff;
+    border-radius: 50px;
+    background: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgb(60, 92, 172) 7.5%, rgba(4,4,29,1) 44.7% );
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: "Merriweather";
+}
+.contact-submit:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    /* background: linear-gradient(264deg, #B415ff -5.09%, #Df8908 100%); */
+}
+input:focus{
+    outline:none;
+    /* border:3px solid #030339; */
+}
+textarea:focus{
+    outline: none;
+}
+
+@media(max-width:768px){
+    .contact{
+        gap:40px;
+        margin: 50px 6%;
+        align-items: start;
+    }
+    .contact-title h1{
+        padding: 0px;
+        font-size: 40px;
+    }
+    .contact-title img{
+        width: 100px;
+        right:-40px;
+    }
+    .contact-sec{
+        flex-direction: column;
+        /* gap: 50px; */
+    }
+    .contact-left{
+        margin-bottom: 30px;
+        /* flex-basis: 100%; */
+    }
+    .contact-left h1{
+        font-size: 35px;
+    }
+    .contact-detail{
+        gap:12px;
+    }
+    .contact-detail img{
+        width: 20px;
+
+    }
+    
+    .contact-right label{
+        font-size: 14px;
+    }
+    .contact-right textarea{
+        width:100%;
+    }
+}
+
+
